@@ -18,7 +18,7 @@ const Header = () => {
   };
 
   return (
-    <header className="w-full bg-transparent h-[50px] absolute top-[40px] left-0 z-20 flex items-center justify-between px-5 md:px-20">
+    <header className="w-full bg-transparent h-[50px] absolute top-[40px] left-0 z-20 flex items-center justify-between px-5 md:px-20 mdd:px-10 lg:px-20 xxl:px-40">
       {/* Logo */}
       <div className="flex items-center z-30">
         <Image

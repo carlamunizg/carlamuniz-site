@@ -48,17 +48,17 @@ export default function Home() {
   ];
 
   return (
-    <main>
+    <div>
       {/* Seção 1 - Hero */}
       <section
-        className="h-[750px] flex items-center justify-center relative bg-cover bg-center bg-no-repeat pt-[50px]"
+        className="h-[750px] flex items-center justify-center relative bg-cover bg-center bg-no-repeat lg:pt-[50px] pt-[10px]"
         style={{ backgroundImage: "url(/images/bebe.svg)" }}
       >
-        <div className="mx-[374px] flex flex-col items-center justify-center relative z-10">
-          <h1 className="text-[100px] font-normal text-black text-center leading-normal mb-4">
+        <div className="mx-[374px] xxl:mx-0 xxl:px-8 flex flex-col items-center justify-center relative z-10">
+          <h1 className="lg:text-[100px] text-[60px] font-normal text-black text-center leading-normal mb-4">
             Consultora do Sono Infantil
           </h1>
-          <h1 className="text-[24px] font-normal font-pergola text-black mb-4 text-center">
+          <h1 className="lg:text-[24px] text-[16px] font-normal font-pergola text-black mb-4 text-center">
             Ajudando pais a melhorarem o sono dos seus filhos com
             <br />
             orientações personalizadas e acolhedoras.
@@ -84,29 +84,40 @@ export default function Home() {
       {/* Seção 2 - Sobre */}
       <section
         id="quem-sou-eu"
-        className="mt-[154px] mb-[154px] bg-white flex items-center justify-center"
+        className="lg:mt-[154px] mt-[50px] lg:mb-[154px] mb-[50px] bg-white flex items-center justify-center"
       >
-        <div className="mx-[100px] flex items-center gap-[128px]">
+        <div className="lg:mx-[100px] mx-[50px] xxl:mx-0 xxl:px-8 flex flex-col lg:flex-row items-center gap-8 lg:gap-[128px]">
           {/* Foto à esquerda */}
           <Image
             src="/images/carla_foto.svg"
-            width={479}
-            height={637}
+            width={300}
+            height={400}
             alt="Carla Muniz"
             title="Carla Muniz"
             priority
-            className="cursor-pointer"
+            className="cursor-pointer w-[300px] h-[400px] lg:w-auto lg:h-auto flex hidden lg:block"
           />
 
           {/* Textos à direita */}
-          <div className="flex flex-col">
-            <span className="h-[32px] bg-blush_cl-100 text-brown_cl-500 rounded-full text-[16px] font-medium mb-6 px-6 py-1 flex items-center justify-center w-fit">
+          <div className="flex flex-col max-w-[600px] lg:max-w-none">
+            <span className="h-[32px] bg-blush_cl-100 text-brown_cl-500 rounded-full text-[16px] font-medium mb-6 px-6 py-1 flex items-center justify-center w-fit mx-auto lg:mx-0">
               Quem sou eu
             </span>
-            <h2 className="text-[64px] font-bold text-gray-900 mb-8">
+            <h2 className="text-[40px] lg:text-[64px] font-bold text-gray-900 mb-8 text-center lg:text-left">
               Prazer, me chamo <br /> Carla Muniz
             </h2>
-            <p className="text-lg text-gray-700 max-w-[600px] mb-6">
+            <div className="flex justify-center lg:hidden">
+              <Image
+                src="/images/carla_foto.svg"
+                width={300}
+                height={400}
+                alt="Carla Muniz"
+                title="Carla Muniz"
+                priority
+                className="block lg:hidden cursor-pointer w-[300px] h-[400px] lg:w-auto lg:h-auto flex mb-10"
+              />
+            </div>
+            <p className="text-lg text-gray-700 max-w-[600px] mb-6 text-center lg:text-left">
               Atuei por 25 anos como pedagoga e fonoaudióloga, sempre voltada
               para ajudar crianças com dificuldades de aprendizagem. Após me
               aposentar em 2023, descobri uma nova paixão: a Neurociência do
@@ -126,7 +137,7 @@ export default function Home() {
               alt="Certificados"
               title="Certificados"
               priority
-              className="cursor-pointer"
+              className="cursor-pointer w-full max-w-[439px] mx-auto lg:mx-0"
             />
           </div>
         </div>
@@ -135,16 +146,16 @@ export default function Home() {
       {/* Seção 3 - Serviços */}
       <section
         id="sobre-consultoria"
-        className="h-[1640px] flex items-center justify-center mx-[100px]"
+        className="min-h-[1640px] lg:h-[1640px] flex items-center justify-center mx-[50px] lg:mx-[100px] xxl:mx-0 xxl:px-8 py-20 lg:py-0"
       >
-        <div className="flex items-center gap-[100px]">
+        <div className="flex flex-col lg:flex-row items-center gap-8 lg:gap-[100px]">
           {/* Conteúdo à esquerda */}
-          <div className="flex flex-col w-[450px] min-w-[450px] max-w-[450px] p-8 rounded-lg flex-shrink-0">
+          <div className="flex flex-col w-full lg:w-[450px] lg:min-w-[450px] lg:max-w-[450px] p-8 rounded-lg flex-shrink-0">
             <span className="h-[32px] bg-blush_cl-100 text-brown_cl-500 rounded-full text-[16px] font-medium mb-6 px-6 py-1 flex items-center justify-center w-fit">
               Sobre a consultoria
             </span>
             <h1 className="text-[64px] font-bold text-gray-900 mb-8 leading-tight">
-              Como posso <br /> te ajudar
+              Como posso <br className="hidden lg:block" /> te ajudar
             </h1>
             <h2 className="text-[24px] font-normal text-gray-800 w-full">
               Entenda melhor como funciona
@@ -152,7 +163,7 @@ export default function Home() {
           </div>
 
           {/* Cards à direita */}
-          <div className="grid grid-cols-2 gap-6">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-6 w-full">
             {/* Linha 1 */}
             <div className="bg-white p-6 rounded-lg">
               <div className="w-12 h-12 rounded-lg flex items-center justify-center mb-4">
@@ -362,7 +373,7 @@ export default function Home() {
         {/* Cards */}
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-7xl mx-auto px-8">
           {/* Card 1 */}
-          <div className="relative rounded-lg overflow-hidden h-[673px]">
+          <div className="relative rounded-lg overflow-hidden h-[850px] md:h-full mdd:h-[720px]">
             <Image
               src="/images/card_at_1.svg"
               alt="Background Card 1"
@@ -390,7 +401,7 @@ export default function Home() {
           </div>
 
           {/* Card 2 */}
-          <div className="relative rounded-lg overflow-hidden h-[785px]">
+          <div className="relative rounded-lg overflow-hidden h-[950px] md:h-full mdd:h-[800px]">
             <Image
               src="/images/card_at_2.svg"
               alt="Background Card 2"
@@ -418,7 +429,7 @@ export default function Home() {
           </div>
 
           {/* Card 3 */}
-          <div className="relative rounded-lg overflow-hidden h-[673px]">
+          <div className="relative rounded-lg overflow-hidden h-[850px] md:h-full mdd:h-[720px]">
             <Image
               src="/images/card_at_3.svg"
               alt="Background Card 3"
@@ -463,19 +474,29 @@ export default function Home() {
         {/* Card */}
         <div className="max-w-7xl mx-auto px-8 w-full ">
           <div className="bg-pink_cl-500 rounded-lg shadow-lg overflow-hidden">
-            <div className="flex flex-col md:flex-row items-center">
-              {/* Conteúdo à esquerda */}
-              <div className="flex-[2] p-14">
+            <div className="flex flex-col mdd:flex-row items-center">
+              {/* Conteúdo */}
+              <div className="flex-[2] p-14 order-2 mdd:order-1">
                 <h2 className="text-[32px] font-bold text-blush_cl-900 mb-6">
                   Estarei ao seu lado para ajudar a construir noites{" "}
                   <span className="text-white">
                     mais calmas e dias mais leves.
                   </span>
                 </h2>
+                <div className="flex-[1] mb-4 order-1 md:block mdd:hidden ">
+                  <Image
+                    src="/images/bebe_dormindo.svg"
+                    width={436}
+                    height={269}
+                    alt="Bebê dormindo"
+                    className="w-full h-auto"
+                    priority
+                  />
+                </div>
                 <p className="text-[16px] text-blush_cl-900 mb-8">
                   Ao escolher a consultoria de sono, você investe no bem-estar
-                  da sua <br /> família. Com orientação empática e estratégias
-                  da neurociência.
+                  da sua <br className="hidden mdd:block" /> família. Com
+                  orientação empática e estratégias da neurociência.
                 </p>
                 <a
                   href="https://wa.me/5561998701080"
@@ -494,8 +515,8 @@ export default function Home() {
                 </a>
               </div>
 
-              {/* Imagem à direita */}
-              <div className="flex-[1] p-14">
+              {/* Imagem */}
+              <div className="flex-[1] p-14 order-1 hidden mdd:block">
                 <Image
                   src="/images/bebe_dormindo.svg"
                   width={436}
@@ -509,6 +530,6 @@ export default function Home() {
           </div>
         </div>
       </section>
-    </main>
+    </div>
   );
 }

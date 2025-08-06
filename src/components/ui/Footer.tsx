@@ -8,13 +8,24 @@ const Footer = () => {
   return (
     <footer className="bg-brown_cl-980 text-white">
       {/* Seção principal do footer */}
-      <div className="max-w-7xl mx-auto py-6 px-8">
-        <div className="flex justify-center items-center space-x-24">
-          {/* Seção de contatos - alinhados à esquerda */}
-          <div className="flex flex-col space-y-4 text-left">
+      <div className="max-w-7xl xxl:max-w-none mx-auto py-6 px-8">
+        <div className="flex flex-col md:flex-row justify-center items-center space-y-8 md:space-y-0">
+          {/* Imagem da marca d'água - aparece primeiro no mobile */}
+          <div className="flex-shrink-0 order-1 md:order-2 md:ml-24">
+            <Image
+              src="/images/marca_dagua-sublogo.svg"
+              alt="Marca d'água"
+              width={177}
+              height={177}
+              className="h-auto"
+            />
+          </div>
+
+          {/* Seção de contatos - aparece depois no mobile */}
+          <div className="flex flex-col space-y-4 text-center md:text-left order-2 md:order-1">
             <a
               href="mailto:carlamunizg@gmail.com"
-              className="text-sm hover:text-brown_cl-200 transition-colors flex items-center gap-2"
+              className="text-sm hover:text-brown_cl-200 transition-colors flex items-center justify-center md:justify-start gap-2"
             >
               carlamunizg@gmail.com
             </a>
@@ -22,7 +33,7 @@ const Footer = () => {
               href="https://instagram.com/carlamuniz.sonoinfantil"
               target="_blank"
               rel="noopener noreferrer"
-              className="text-sm hover:text-brown_cl-200 transition-colors flex items-center gap-2"
+              className="text-sm hover:text-brown_cl-200 transition-colors flex items-center justify-center md:justify-start gap-2"
             >
               <svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -42,7 +53,7 @@ const Footer = () => {
               href="https://wa.me/5561998701080"
               target="_blank"
               rel="noopener noreferrer"
-              className="text-sm hover:text-brown_cl-200 transition-colors flex items-center gap-2"
+              className="text-sm hover:text-brown_cl-200 transition-colors flex items-center justify-center md:justify-start gap-2"
             >
               <svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -59,33 +70,24 @@ const Footer = () => {
               (61) 99870-1080
             </a>
           </div>
-
-          {/* Imagem da marca d'água */}
-          <div className="flex-shrink-0">
-            <Image
-              src="/images/marca_dagua-sublogo.svg"
-              alt="Marca d'água"
-              width={177}
-              height={177}
-              className="h-auto"
-            />
-          </div>
         </div>
       </div>
 
       {/* Seção inferior com fundo preto */}
       <div className="bg-black py-4">
-        <div className="max-w-7xl mx-auto px-8 text-center">
-          <p className="text-[16px] text-gray-300 flex items-center justify-center gap-2">
-            Feito por <span className="font-bold">Astra Tech</span>
-            <Image
-              src="/images/astra_tech.svg"
-              alt="Astra Tech"
-              width={18}
-              height={18}
-              className="inline-block"
-            />
-            <span className="ml-8 flex items-center">
+        <div className="max-w-7xl xxl:max-w-none mx-auto px-8 text-center">
+          <p className="text-[14px] md:text-[16px] text-gray-300 flex flex-col md:flex-row items-center justify-center gap-2 md:gap-2">
+            <span className="flex items-center gap-2">
+              Feito por <span className="font-bold">Astra Tech</span>
+              <Image
+                src="/images/astra_tech.svg"
+                alt="Astra Tech"
+                width={18}
+                height={18}
+                className="inline-block"
+              />
+            </span>
+            <span className="flex items-center gap-1 md:ml-8">
               <span className="flex items-center justify-center w-4 h-4 mr-1">
                 ®
               </span>

@@ -161,8 +161,8 @@ export default function RootLayout({
         <div className="flex flex-col min-h-screen xxl:px-40 bg-white relative">
           <Header />
           <main className="flex-grow">{children}</main>
-          <Footer />
         </div>
+        <Footer />
       </body>
     </html>
   );
