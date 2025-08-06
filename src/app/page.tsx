@@ -55,10 +55,10 @@ export default function Home() {
         style={{ backgroundImage: "url(/images/bebe.svg)" }}
       >
         <div className="mx-[374px] flex flex-col items-center justify-center relative z-10">
-          <h1 className="text-[100px] font-normal text-gray-900 mb-4 text-center">
+          <h1 className="text-[100px] font-normal text-black text-center leading-normal mb-4">
             Consultora do Sono Infantil
           </h1>
-          <h1 className="text-[24px] font-normal text-gray-800 mb-4 text-center">
+          <h1 className="text-[24px] font-normal font-pergola text-black mb-4 text-center">
             Ajudando pais a melhorarem o sono dos seus filhos com
             <br />
             orientações personalizadas e acolhedoras.
@@ -67,7 +67,7 @@ export default function Home() {
             href="https://wa.me/5561998701080"
             target="_blank"
             rel="noopener noreferrer"
-            className="w-[246px] text-center h-[46px] bg-green-500 text-white rounded-full hover:bg-green-600 transition-colors flex items-center justify-center gap-2 px-[22px] py-[14px]"
+            className="w-[246px] text-center h-[46px] bg-[#4CAF50] text-white rounded-full hover:bg-[#358438] transition-colors flex items-center justify-center gap-2 px-[22px] py-[14px]"
           >
             <svg
               className="w-4 h-4 mb-[3px]"
@@ -100,7 +100,7 @@ export default function Home() {
 
           {/* Textos à direita */}
           <div className="flex flex-col">
-            <span className="w-[180px] h-[32px] bg-blush_cl-100 p text-brown_cl-500 rounded-full text-[16px] font-medium mb-6 w-fit flex items-center justify-center">
+            <span className="h-[32px] bg-blush_cl-100 text-brown_cl-500 rounded-full text-[16px] font-medium mb-6 px-6 py-1 flex items-center justify-center w-fit">
               Quem sou eu
             </span>
             <h2 className="text-[64px] font-bold text-gray-900 mb-8">
@@ -140,7 +140,7 @@ export default function Home() {
         <div className="flex items-center gap-[100px]">
           {/* Conteúdo à esquerda */}
           <div className="flex flex-col w-[450px] min-w-[450px] max-w-[450px] p-8 rounded-lg flex-shrink-0">
-            <span className="w-[180px] h-[32px] bg-blush_cl-100 p text-brown_cl-500 rounded-full text-[16px] font-medium mb-6 w-fit flex items-center justify-center">
+            <span className="h-[32px] bg-blush_cl-100 text-brown_cl-500 rounded-full text-[16px] font-medium mb-6 px-6 py-1 flex items-center justify-center w-fit">
               Sobre a consultoria
             </span>
             <h1 className="text-[64px] font-bold text-gray-900 mb-8 leading-tight">
@@ -231,13 +231,14 @@ export default function Home() {
               <p className="text-[16px] text-gray-600">
                 O tempo de acompanhamento será definido conforme o pacote
                 contratado:
-                <br />
+              </p>
+              <ul className="text-[16px] text-gray-600 mt-2">
                 <li>Baby Start - 5 dias (gestantes)</li>
                 <li>
                   Bê-a-bá do Sono - 45 dias (crianças à partir de 4 meses)
                 </li>
                 <li>Flow-Up do Sono - 10 dias (apoio pós consultoria)</li>
-              </p>
+              </ul>
             </div>
 
             {/* Linha 3 */}
@@ -350,7 +351,7 @@ export default function Home() {
       >
         {/* Header da seção */}
         <div className="flex flex-col mb-16 max-w-7xl mx-auto px-8 w-full">
-          <span className="w-[200px] h-[32px] bg-blush_cl-100 p text-brown_cl-500 rounded-full text-[16px] font-medium mb-6 w-fit flex items-center justify-center">
+          <span className="h-[32px] bg-blush_cl-100 text-brown_cl-500 rounded-full text-[16px] font-medium mb-6 px-6 py-1 flex items-center justify-center w-fit">
             Pacotes de atendimento
           </span>
           <h1 className="text-[64px] font-bold text-gray-900 mb-8 leading-tight">
@@ -380,7 +381,7 @@ export default function Home() {
               <h4 className="text-[16px] font-semibold text-gray-800 mb-4">
                 Leveza e segurança desde o início da maternidade..
               </h4>
-              <button className="w-full bg-white text-black border-solid border-2 border-gray-300 rounded-full hover:bg-pink_cl-500 transition-colors py-3 mb-2 font-medium">
+              <button className="w-full bg-white text-black border-solid border-2 border-gray-300 rounded-full hover:text-white hover:border-pink_cl-980 hover:bg-pink_cl-980 transition-colors py-3 mb-2 font-medium">
                 Tenho interesse
               </button>
               <hr className="my-6" />
@@ -408,7 +409,7 @@ export default function Home() {
               <h4 className="text-[16px] font-semibold text-gray-800 mb-4">
                 Ideal para mudanças duradouras com acompanhamento contínuo
               </h4>
-              <button className="w-full bg-pink_cl-500 text-white rounded-full hover:bg-pink_cl-600 transition-colors py-3 mb-2 font-medium">
+              <button className="w-full bg-pink_cl-500 text-white rounded-full hover:bg-pink_cl-980 hover:border-pink_cl-980 transition-colors py-3 mb-2 font-medium">
                 Tenho interesse
               </button>
               <hr className="my-6" />
@@ -437,7 +438,7 @@ export default function Home() {
                 Apoio durante regressões, entrada na creche, início da fala e
                 outras fases
               </h4>
-              <button className="w-full bg-white text-black rounded-full border-solid border-2 border-gray-300 hover:bg-pink_cl-500 transition-colors py-3 mb-2 font-medium">
+              <button className="w-full bg-white text-black rounded-full border-solid border-2 hover:border-pink_cl-980 hover:text-white border-gray-300 hover:bg-pink_cl-980 transition-colors py-3 mb-2 font-medium">
                 Tenho interesse
               </button>
               <hr className="my-6" />
@@ -480,7 +481,7 @@ export default function Home() {
                   href="https://wa.me/5561998701080"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="w-[247px] bg-green-500 text-white px-8 py-4 rounded-full hover:bg-green-600 transition-colors text-lg font-medium flex items-center gap-3"
+                  className="w-[247px] bg-[#4CAF50] h-[56px] text-white px-8 py-4 rounded-full hover:bg-[#358438] transition-colors text-lg font-medium flex items-center gap-3"
                 >
                   <svg
                     className="w-5 h-5"

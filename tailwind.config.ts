@@ -31,6 +31,7 @@ export default {
           800: "#864e4e",
           900: "#6f3e3f",
           950: "#3d1d1f",
+          980: "#CC6C67"
         },
         brown_cl: {
           50: "#f8f6f6",
