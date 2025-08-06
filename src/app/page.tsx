@@ -52,7 +52,7 @@ export default function Home() {
       {/* Seção 1 - Hero */}
       <section
         className="h-[750px] flex items-center justify-center relative bg-cover bg-center bg-no-repeat lg:pt-[50px] pt-[10px]"
-        style={{ backgroundImage: "url(/images/bebe.svg)" }}
+        style={{ backgroundImage: "url(images/bebe.svg)" }}
       >
         <div className="mx-[374px] xxl:mx-0 xxl:px-8 flex flex-col items-center justify-center relative z-10">
           <h1 className="lg:text-[100px] text-[60px] font-normal text-black text-center leading-normal mb-4">
@@ -89,7 +89,7 @@ export default function Home() {
         <div className="lg:mx-[100px] mx-[50px] xxl:mx-0 xxl:px-8 flex flex-col lg:flex-row items-center gap-8 lg:gap-[128px]">
           {/* Foto à esquerda */}
           <Image
-            src="/images/carla_foto.svg"
+            src="images/carla_foto.svg"
             width={300}
             height={400}
             alt="Carla Muniz"
@@ -108,7 +108,7 @@ export default function Home() {
             </h2>
             <div className="flex justify-center lg:hidden">
               <Image
-                src="/images/carla_foto.svg"
+                src="images/carla_foto.svg"
                 width={300}
                 height={400}
                 alt="Carla Muniz"
@@ -131,7 +131,7 @@ export default function Home() {
               seguro, previsível e afetuoso — dentro e fora da barriga.
             </p>
             <Image
-              src="/images/certificados.svg"
+              src="images/certificados.svg"
               width={439}
               height={104}
               alt="Certificados"
@@ -375,7 +375,7 @@ export default function Home() {
           {/* Card 1 */}
           <div className="relative rounded-lg overflow-hidden h-[850px] md:h-full mdd:h-[720px]">
             <Image
-              src="/images/card_at_1.svg"
+              src="images/card_at_1.svg"
               alt="Background Card 1"
               fill
               className="object-cover"
@@ -403,7 +403,7 @@ export default function Home() {
           {/* Card 2 */}
           <div className="relative rounded-lg overflow-hidden h-[950px] md:h-full mdd:h-[800px]">
             <Image
-              src="/images/card_at_2.svg"
+              src="images/card_at_2.svg"
               alt="Background Card 2"
               fill
               className="object-cover"
@@ -431,7 +431,7 @@ export default function Home() {
           {/* Card 3 */}
           <div className="relative rounded-lg overflow-hidden h-[850px] md:h-full mdd:h-[720px]">
             <Image
-              src="/images/card_at_3.svg"
+              src="images/card_at_3.svg"
               alt="Background Card 3"
               fill
               className="object-cover"
@@ -485,7 +485,7 @@ export default function Home() {
                 </h2>
                 <div className="flex-[1] mb-4 order-1 md:block mdd:hidden ">
                   <Image
-                    src="/images/bebe_dormindo.svg"
+                    src="images/bebe_dormindo.svg"
                     width={436}
                     height={269}
                     alt="Bebê dormindo"
@@ -518,7 +518,7 @@ export default function Home() {
               {/* Imagem */}
               <div className="flex-[1] p-14 order-1 hidden mdd:block">
                 <Image
-                  src="/images/bebe_dormindo.svg"
+                  src="images/bebe_dormindo.svg"
                   width={436}
                   height={269}
                   alt="Bebê dormindo"

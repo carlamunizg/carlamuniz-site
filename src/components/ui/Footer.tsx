@@ -13,7 +13,7 @@ const Footer = () => {
           {/* Imagem da marca d'água - aparece primeiro no mobile */}
           <div className="flex-shrink-0 order-1 md:order-2 md:ml-24">
             <Image
-              src="/images/marca_dagua-sublogo.svg"
+              src="images/marca_dagua-sublogo.svg"
               alt="Marca d'água"
               width={177}
               height={177}
@@ -80,7 +80,7 @@ const Footer = () => {
             <span className="flex items-center gap-2">
               Feito por <span className="font-bold">Astra Tech</span>
               <Image
-                src="/images/astra_tech.svg"
+                src="images/astra_tech.svg"
                 alt="Astra Tech"
                 width={18}
                 height={18}
