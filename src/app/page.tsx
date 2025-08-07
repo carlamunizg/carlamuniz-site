@@ -392,9 +392,14 @@ export default function Home() {
               <h4 className="text-[16px] font-semibold text-gray-800 mb-4">
                 Leveza e segurança desde o início da maternidade..
               </h4>
-              <button className="w-full bg-white text-black border-solid border-2 border-gray-300 rounded-full hover:text-white hover:border-pink_cl-980 hover:bg-pink_cl-980 transition-colors py-3 mb-2 font-medium">
+              <a
+                href="https://wa.me/5561998701080"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="w-full bg-white text-black border-solid border-2 border-gray-300 rounded-full hover:text-white hover:border-pink_cl-980 hover:bg-pink_cl-980 transition-colors py-3 mb-2 font-medium flex items-center justify-center"
+              >
                 Tenho interesse
-              </button>
+              </a>
               <hr className="my-6" />
               <CheckList items={card_1} />
             </div>
@@ -420,9 +425,14 @@ export default function Home() {
               <h4 className="text-[16px] font-semibold text-gray-800 mb-4">
                 Ideal para mudanças duradouras com acompanhamento contínuo
               </h4>
-              <button className="w-full bg-pink_cl-500 text-white rounded-full hover:bg-pink_cl-980 hover:border-pink_cl-980 transition-colors py-3 mb-2 font-medium">
+              <a
+                href="https://wa.me/5561998701080"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="w-full bg-pink_cl-500 text-white rounded-full hover:bg-pink_cl-980 hover:border-pink_cl-980 transition-colors py-3 mb-2 font-medium flex items-center justify-center"
+              >
                 Tenho interesse
-              </button>
+              </a>
               <hr className="my-6" />
               <CheckList items={card_2} />
             </div>
@@ -449,9 +459,14 @@ export default function Home() {
                 Apoio durante regressões, entrada na creche, início da fala e
                 outras fases
               </h4>
-              <button className="w-full bg-white text-black rounded-full border-solid border-2 hover:border-pink_cl-980 hover:text-white border-gray-300 hover:bg-pink_cl-980 transition-colors py-3 mb-2 font-medium">
+              <a
+                href="https://wa.me/5561998701080"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="w-full bg-white text-black rounded-full border-solid border-2 hover:border-pink_cl-980 hover:text-white border-gray-300 hover:bg-pink_cl-980 transition-colors py-3 mb-2 font-medium flex items-center justify-center"
+              >
                 Tenho interesse
-              </button>
+              </a>
               <hr className="my-6" />
               <CheckList items={card_3} />
             </div>
