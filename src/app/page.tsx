@@ -84,7 +84,7 @@ export default function Home() {
       {/* Seção 2 - Sobre */}
       <section
         id="quem-sou-eu"
-        className="lg:mt-[154px] mt-[50px] lg:mb-[154px] mb-[50px] bg-white flex items-center justify-center"
+        className="lg:mt-[154px] mt-[50px] lg:mb-[50px] mb-[50px] bg-white flex items-center justify-center"
       >
         <div className="lg:mx-[100px] mx-[50px] xxl:mx-0 xxl:px-8 flex flex-col lg:flex-row items-center gap-8 lg:gap-[128px]">
           {/* Foto à esquerda */}
@@ -174,207 +174,203 @@ export default function Home() {
       {/* Seção 3 - Serviços */}
       <section
         id="sobre-consultoria"
-        className="min-h-[1640px] lg:h-[1640px] flex items-center justify-center mx-[50px] lg:mx-[100px] xxl:mx-0 xxl:px-8 py-20 lg:py-0"
+        className="min-h-[1640px] flex flex-col items-center justify-center mx-[50px] lg:mx-[100px] xxl:mx-0 xxl:px-8 py-20"
       >
-        <div className="flex flex-col lg:flex-row items-center gap-8 lg:gap-[100px]">
-          {/* Conteúdo à esquerda */}
-          <div className="flex flex-col w-full lg:w-[450px] lg:min-w-[450px] lg:max-w-[450px] p-8 rounded-lg flex-shrink-0">
-            <span className="h-[32px] bg-blush_cl-100 text-brown_cl-500 rounded-full text-[16px] font-medium mb-6 px-6 py-1 flex items-center justify-center w-fit">
+        {/* Conteúdo do meio */}
+        <div
+          id="como-posso-te-ajudar"
+          className="flex flex-col items-center text-center mb-16 max-w-4xl"
+        >
+          <span className="h-[32px] bg-blush_cl-100 text-brown_cl-500 rounded-full text-[16px] font-medium mb-6 px-6 py-1 flex items-center justify-center w-fit">
+            Sobre a consultoria
+          </span>
+          <h1 className="text-[64px] font-bold text-gray-900 mb-8 leading-tight">
+            Como posso te ajudar
+          </h1>
+          <h2 className="text-[24px] font-normal text-gray-800 w-full">
+            Entenda melhor como funciona
+          </h2>
+        </div>
+
+        {/* Cards embaixo - 3 por linha */}
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 w-full max-w-7xl">
+          <div className="bg-white p-6 rounded-lg">
+            <div className="w-12 h-12 rounded-lg flex items-center justify-center mb-4">
+              <Image
+                src="/icons/icon_1.svg"
+                width={48}
+                height={48}
+                alt="Ícone Consultoria Personalizada"
+                className="w-12 h-12"
+              />
+            </div>
+            <h3 className="text-[24px] font-semibold text-gray-900 mb-2">
               Sobre a consultoria
-            </span>
-            <h1 className="text-[64px] font-bold text-gray-900 mb-8 leading-tight">
-              Como posso <br className="hidden lg:block" /> te ajudar
-            </h1>
-            <h2 className="text-[24px] font-normal text-gray-800 w-full">
-              Entenda melhor como funciona
-            </h2>
+            </h3>
+            <p className="text-[16px] text-gray-600">
+              Um serviço personalizado que oferece suporte e orientação com
+              segurança para os pais, visando melhorar o sono do bebê e o
+              bem-estar da família.
+            </p>
           </div>
 
-          {/* Cards à direita */}
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-6 w-full">
-            {/* Linha 1 */}
-            <div className="bg-white p-6 rounded-lg">
-              <div className="w-12 h-12 rounded-lg flex items-center justify-center mb-4">
-                <Image
-                  src="/icons/icon_1.svg"
-                  width={48}
-                  height={48}
-                  alt="Ícone Consultoria Personalizada"
-                  className="w-12 h-12"
-                />
-              </div>
-              <h3 className="text-[24px] font-semibold text-gray-900 mb-2">
-                Sobre a consultoria
-              </h3>
-              <p className="text-[16px] text-gray-600">
-                Um serviço personalizado que oferece suporte e orientação com
-                segurança para os pais, visando melhorar o sono do bebê e o
-                bem-estar da família.
-              </p>
+          <div className="bg-white p-6 rounded-lg">
+            <div className="w-12 h-12 rounded-lg flex items-center justify-center mb-4">
+              <Image
+                src="/icons/icon_2.svg"
+                width={48}
+                height={48}
+                alt="Ícone Avaliação do Sono"
+                className="w-12 h-12"
+              />
             </div>
+            <h3 className="text-[24px] font-semibold text-gray-900 mb-2">
+              Primeiro contato{" "}
+            </h3>
+            <p className="text-[16px] text-gray-600">
+              Você entra em contato via WhatsApp para conhecer a consultoria e
+              tirar dúvidas iniciais.
+            </p>
+          </div>
 
-            <div className="bg-white p-6 rounded-lg">
-              <div className="w-12 h-12 rounded-lg flex items-center justify-center mb-4">
-                <Image
-                  src="/icons/icon_2.svg"
-                  width={48}
-                  height={48}
-                  alt="Ícone Avaliação do Sono"
-                  className="w-12 h-12"
-                />
-              </div>
-              <h3 className="text-[24px] font-semibold text-gray-900 mb-2">
-                Primeiro contato{" "}
-              </h3>
-              <p className="text-[16px] text-gray-600">
-                Você entra em contato via WhatsApp para conhecer a consultoria e
-                tirar dúvidas iniciais.
-              </p>
+          <div className="bg-white p-6 rounded-lg">
+            <div className="w-12 h-12 rounded-lg flex items-center justify-center mb-4">
+              <Image
+                src="/icons/icon_3.svg"
+                width={48}
+                height={48}
+                alt="Ícone Plano de Ação"
+                className="w-12 h-12"
+              />
             </div>
+            <h3 className="text-[24px] font-semibold text-gray-900 mb-2">
+              Questionário inicial
+            </h3>
+            <p className="text-[16px] text-gray-600">
+              Após o primeiro contato e efetivação do pagamento inicial, será
+              encaminhado um formulário para entender a rotina do bebê e os
+              desafios enfrentados, permitindo uma análise detalhada da
+              situação..
+            </p>
+          </div>
 
-            {/* Linha 2 */}
-            <div className="bg-white p-6 rounded-lg">
-              <div className="w-12 h-12 rounded-lg flex items-center justify-center mb-4">
-                <Image
-                  src="/icons/icon_3.svg"
-                  width={48}
-                  height={48}
-                  alt="Ícone Plano de Ação"
-                  className="w-12 h-12"
-                />
-              </div>
-              <h3 className="text-[24px] font-semibold text-gray-900 mb-2">
-                Questionário inicial
-              </h3>
-              <p className="text-[16px] text-gray-600">
-                Após o primeiro contato e efetivação do pagamento inicial, será
-                encaminhado um formulário para entender a rotina do bebê e os
-                desafios enfrentados, permitindo uma análise detalhada da
-                situação..
-              </p>
+          <div className="bg-white p-6 rounded-lg">
+            <div className="w-12 h-12 rounded-lg flex items-center justify-center mb-4">
+              <Image
+                src="/icons/icon_4.svg"
+                width={48}
+                height={48}
+                alt="Ícone Acompanhamento"
+                className="w-12 h-12"
+              />
             </div>
+            <h3 className="text-[24px] font-semibold text-gray-900 mb-2">
+              Duração da consultoria
+            </h3>
+            <p className="text-[16px] text-gray-600">
+              O tempo de acompanhamento será definido conforme o pacote
+              contratado:
+            </p>
+            <ul className="text-[16px] text-gray-600 mt-2">
+              <li>• Baby Start - 5 dias (gestantes)</li>
+              <li>
+                • Bê-a-bá do Sono - 45 dias (crianças à partir de 4 meses)
+              </li>
+              <li>• Flow-Up do Sono - 10 dias (apoio pós consultoria)</li>
+            </ul>
+          </div>
 
-            <div className="bg-white p-6 rounded-lg">
-              <div className="w-12 h-12 rounded-lg flex items-center justify-center mb-4">
-                <Image
-                  src="/icons/icon_4.svg"
-                  width={48}
-                  height={48}
-                  alt="Ícone Acompanhamento"
-                  className="w-12 h-12"
-                />
-              </div>
-              <h3 className="text-[24px] font-semibold text-gray-900 mb-2">
-                Duração da consultoria
-              </h3>
-              <p className="text-[16px] text-gray-600">
-                O tempo de acompanhamento será definido conforme o pacote
-                contratado:
-              </p>
-              <ul className="text-[16px] text-gray-600 mt-2">
-                <li>Baby Start - 5 dias (gestantes)</li>
-                <li>
-                  Bê-a-bá do Sono - 45 dias (crianças à partir de 4 meses)
-                </li>
-                <li>Flow-Up do Sono - 10 dias (apoio pós consultoria)</li>
-              </ul>
+          <div className="bg-white p-6 rounded-lg ">
+            <div className="w-12 h-12 rounded-lg flex items-center justify-center mb-4">
+              <Image
+                src="/icons/icon_5.svg"
+                width={48}
+                height={48}
+                alt="Ícone Acolhimento"
+                className="w-12 h-12"
+              />
             </div>
+            <h3 className="text-[24px] font-semibold text-gray-900 mb-2">
+              Plano personalizado
+            </h3>
+            <p className="text-[16px] text-gray-600">
+              Na consultoria, você receberá um plano feito sob medida, com base
+              na idade da criança, rotina da casa e necessidades específicas.Com
+              uma abordagem humanizada e embasada na neurociência, construirei
+              junto com você uma rotina de sono possível, respeitosa e eficaz. O
+              plano é adaptado ao longo do acompanhamento, com orientações
+              práticas e suporte constante.
+            </p>
+          </div>
 
-            {/* Linha 3 */}
-            <div className="bg-white p-6 rounded-lg ">
-              <div className="w-12 h-12 rounded-lg flex items-center justify-center mb-4">
-                <Image
-                  src="/icons/icon_5.svg"
-                  width={48}
-                  height={48}
-                  alt="Ícone Acolhimento"
-                  className="w-12 h-12"
-                />
-              </div>
-              <h3 className="text-[24px] font-semibold text-gray-900 mb-2">
-                Plano personalizado
-              </h3>
-              <p className="text-[16px] text-gray-600">
-                Na consultoria, você receberá um plano feito sob medida, com
-                base na idade da criança, rotina da casa e necessidades
-                específicas.Com uma abordagem humanizada e embasada na
-                neurociência, construirei junto com você uma rotina de sono
-                possível, respeitosa e eficaz. O plano é adaptado ao longo do
-                acompanhamento, com orientações práticas e suporte constante.
-              </p>
+          <div className="bg-white p-6 rounded-lg ">
+            <div className="w-12 h-12 rounded-lg flex items-center justify-center mb-4">
+              <Image
+                src="/icons/icon_6.svg"
+                width={48}
+                height={48}
+                alt="Ícone Educação"
+                className="w-12 h-12"
+              />
             </div>
+            <h3 className="text-[24px] font-semibold text-gray-900 mb-2">
+              Acompanhamento diário
+            </h3>
+            <p className="text-[16px] text-gray-600">
+              Para as mamães, o progresso da sua criança será acompanhado de
+              forma diária e personalizada, com todo o suporte que você precisa
+              para se sentir segura nas decisões e ajustes da rotina do sono.
+              Para as futuras mamães, você receberá orientações baseadas em
+              neurociência e práticas gentis para já iniciar a jornada com mais
+              segurança: sono do recém-nascido, preparo emocional, ambiente do
+              sono e como lidar com os primeiros meses de forma mais leve
+              (exterogestação).
+            </p>
+          </div>
 
-            <div className="bg-white p-6 rounded-lg ">
-              <div className="w-12 h-12 rounded-lg flex items-center justify-center mb-4">
-                <Image
-                  src="/icons/icon_6.svg"
-                  width={48}
-                  height={48}
-                  alt="Ícone Educação"
-                  className="w-12 h-12"
-                />
-              </div>
-              <h3 className="text-[24px] font-semibold text-gray-900 mb-2">
-                Acompanhamento diário
-              </h3>
-              <p className="text-[16px] text-gray-600">
-                Para as mamães, o progresso da sua criança será acompanhado de
-                forma diária e personalizada, com todo o suporte que você
-                precisa para se sentir segura nas decisões e ajustes da rotina
-                do sono. Para as futuras mamães, você receberá orientações
-                baseadas em neurociência e práticas gentis para já iniciar a
-                jornada com mais segurança: sono do recém-nascido, preparo
-                emocional, ambiente do sono e como lidar com os primeiros meses
-                de forma mais leve (exterogestação).
-              </p>
+          <div className="bg-white p-6 rounded-lg">
+            <div className="w-12 h-12 rounded-lg flex items-center justify-center mb-4">
+              <Image
+                src="/icons/icon_7.svg"
+                width={48}
+                height={48}
+                alt="Ícone Suporte Familiar"
+                className="w-12 h-12"
+              />
             </div>
+            <h3 className="text-[24px] font-semibold text-gray-900 mb-2">
+              Todos os benefícios
+            </h3>
+            <p className="text-[16px] text-gray-600">
+              A Consultoria do Sono Infantil é um cuidado que começa ainda na
+              gestação, preparando o terreno emocional e informativo para a
+              chegada do bebê. Para mães de crianças que enfrentam dificuldades
+              para dormir, oferecemos estratégias personalizadas, embasadas na
+              neurociência, que respeitam o ritmo da família e promovem noites
+              mais tranquilas. E para quem já passou pela consultoria, temos
+              acompanhamento evolutivo com foco nas novas fases da infância,
+              porque o sono muda, e o suporte também precisa mudar.
+            </p>
+          </div>
 
-            {/* Linha 4 */}
-            <div className="bg-white p-6 rounded-lg ">
-              <div className="w-12 h-12 rounded-lg flex items-center justify-center mb-4">
-                <Image
-                  src="/icons/icon_7.svg"
-                  width={48}
-                  height={48}
-                  alt="Ícone Suporte Familiar"
-                  className="w-12 h-12"
-                />
-              </div>
-              <h3 className="text-[24px] font-semibold text-gray-900 mb-2">
-                Todos os benefícios
-              </h3>
-              <p className="text-[16px] text-gray-600">
-                A Consultoria do Sono Infantil é um cuidado que começa ainda na
-                gestação, preparando o terreno emocional e informativo para a
-                chegada do bebê. Para mães de crianças que enfrentam
-                dificuldades para dormir, oferecemos estratégias personalizadas,
-                embasadas na neurociência, que respeitam o ritmo da família e
-                promovem noites mais tranquilas. E para quem já passou pela
-                consultoria, temos acompanhamento evolutivo com foco nas novas
-                fases da infância, porque o sono muda, e o suporte também
-                precisa mudar.
-              </p>
+          <div className="bg-white p-6 rounded-lg">
+            <div className="w-12 h-12 rounded-lg flex items-center justify-center mb-4">
+              <Image
+                src="/icons/icon_8.svg"
+                width={48}
+                height={48}
+                alt="Ícone Resultados Garantidos"
+                className="w-12 h-12"
+              />
             </div>
-
-            <div className="bg-white p-6 rounded-lg">
-              <div className="w-12 h-12 rounded-lg flex items-center justify-center mb-4">
-                <Image
-                  src="/icons/icon_8.svg"
-                  width={48}
-                  height={48}
-                  alt="Ícone Resultados Garantidos"
-                  className="w-12 h-12"
-                />
-              </div>
-              <h3 className="text-[24px] font-semibold text-gray-900 mb-2">
-                Orientações futuras{" "}
-              </h3>
-              <p className="text-[16px] text-gray-600">
-                Ao fim da consultoria, você recebe instruções para lidar com
-                mudanças futuras na rotina do bebê, promovendo autonomia e
-                segurança.
-              </p>
-            </div>
+            <h3 className="text-[24px] font-semibold text-gray-900 mb-2">
+              Orientações futuras{" "}
+            </h3>
+            <p className="text-[16px] text-gray-600">
+              Ao fim da consultoria, você recebe instruções para lidar com
+              mudanças futuras na rotina do bebê, promovendo autonomia e
+              segurança.
+            </p>
           </div>
         </div>
       </section>
