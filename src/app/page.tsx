@@ -130,7 +130,7 @@ export default function Home() {
               gestação, acreditando que um sono saudável começa em um ambiente
               seguro, previsível e afetuoso — dentro e fora da barriga.
             </p>
-            <Image
+            {/* <Image
               src="images/certificados.svg"
               width={439}
               height={104}
@@ -138,7 +138,35 @@ export default function Home() {
               title="Certificados"
               priority
               className="cursor-pointer w-full max-w-[439px] mx-auto lg:mx-0"
-            />
+            /> */}
+            <div className="flex items-center gap-4">
+              <Image
+                src="images/reconhecimento.svg"
+                width={110}
+                height={110}
+                alt="Reconhecimento"
+                title="Reconhecimento"
+                className="cursor-pointer w-full max-w-[110px] mx-auto lg:mx-0"
+              />
+              <Image
+                src="images/neurociencia.svg"
+                width={110}
+                height={110}
+                alt="neurocienci"
+                title="neurocienci"
+                priority
+                className="cursor-pointer w-full max-w-[110px] mx-auto lg:mx-0"
+              />
+              <Image
+                src="images/Selo_Profissional_Certificada.svg"
+                width={110}
+                height={110}
+                alt="selo profissional"
+                title="selo profissional"
+                priority
+                className="cursor-pointer w-full max-w-[110px] mx-auto lg:mx-0"
+              />
+            </div>
           </div>
         </div>
       </section>
