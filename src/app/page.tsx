@@ -1,3 +1,5 @@
+"use client";
+
 import Image from "next/image";
 
 const CheckList = ({ items }: { items: string[] }) => (
@@ -64,7 +66,7 @@ export default function Home() {
             orientações personalizadas e acolhedoras.
           </h1>
           <a
-            href="https://wa.me/5561998701080"
+            href="https://wa.me/5561985980768"
             target="_blank"
             rel="noopener noreferrer"
             className="w-[246px] text-center h-[46px] bg-[#4CAF50] text-white rounded-full hover:bg-[#358438] transition-colors flex items-center justify-center gap-2 px-[22px] py-[14px]"
@@ -174,12 +176,12 @@ export default function Home() {
       {/* Seção 3 - Serviços */}
       <section
         id="sobre-consultoria"
-        className="min-h-[1640px] flex flex-col items-center justify-center mx-[50px] lg:mx-[100px] xxl:mx-0 xxl:px-8 py-20"
+        className="flex flex-col lg:grid lg:grid-cols-2 items-center justify-center mx-[50px] lg:mx-[100px] xxl:mx-0 xxl:px-8 py-20"
       >
-        {/* Conteúdo do meio */}
+        {/* Coluna da esquerda */}
         <div
           id="como-posso-te-ajudar"
-          className="flex flex-col items-center text-center mb-16 max-w-4xl"
+          className="flex flex-col items-start text-left max-w-md self-start lg:sticky lg:top-24 ml-8 xll:ml-[500px]"
         >
           <span className="h-[32px] bg-blush_cl-100 text-brown_cl-500 rounded-full text-[16px] font-medium mb-6 px-6 py-1 flex items-center justify-center w-fit">
             Sobre a consultoria
@@ -192,8 +194,8 @@ export default function Home() {
           </h2>
         </div>
 
-        {/* Cards embaixo - 3 por linha */}
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 w-full max-w-7xl">
+        {/* Coluna da direita - cards */}
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-6 w-full max-w-5xl">
           <div className="bg-white p-6 rounded-lg">
             <div className="w-12 h-12 rounded-lg flex items-center justify-center mb-4">
               <Image
@@ -225,7 +227,7 @@ export default function Home() {
               />
             </div>
             <h3 className="text-[24px] font-semibold text-gray-900 mb-2">
-              Primeiro contato{" "}
+              Primeiro contato
             </h3>
             <p className="text-[16px] text-gray-600">
               Você entra em contato via WhatsApp para conhecer a consultoria e
@@ -250,7 +252,7 @@ export default function Home() {
               Após o primeiro contato e efetivação do pagamento inicial, será
               encaminhado um formulário para entender a rotina do bebê e os
               desafios enfrentados, permitindo uma análise detalhada da
-              situação..
+              situação.
             </p>
           </div>
 
@@ -280,7 +282,7 @@ export default function Home() {
             </ul>
           </div>
 
-          <div className="bg-white p-6 rounded-lg ">
+          <div className="bg-white p-6 rounded-lg">
             <div className="w-12 h-12 rounded-lg flex items-center justify-center mb-4">
               <Image
                 src="/icons/icon_5.svg"
@@ -295,15 +297,15 @@ export default function Home() {
             </h3>
             <p className="text-[16px] text-gray-600">
               Na consultoria, você receberá um plano feito sob medida, com base
-              na idade da criança, rotina da casa e necessidades específicas.Com
-              uma abordagem humanizada e embasada na neurociência, construirei
-              junto com você uma rotina de sono possível, respeitosa e eficaz. O
-              plano é adaptado ao longo do acompanhamento, com orientações
-              práticas e suporte constante.
+              na idade da criança, rotina da casa e necessidades específicas.
+              Com uma abordagem humanizada e embasada na neurociência,
+              construirei junto com você uma rotina de sono possível, respeitosa
+              e eficaz. O plano é adaptado ao longo do acompanhamento, com
+              orientações práticas e suporte constante.
             </p>
           </div>
 
-          <div className="bg-white p-6 rounded-lg ">
+          <div className="bg-white p-6 rounded-lg">
             <div className="w-12 h-12 rounded-lg flex items-center justify-center mb-4">
               <Image
                 src="/icons/icon_6.svg"
@@ -318,7 +320,7 @@ export default function Home() {
             </h3>
             <p className="text-[16px] text-gray-600">
               Para as mamães, o progresso da sua criança será acompanhado de
-              forma diária e personalizada, com todo o suporte que você precisa
+              forma diária e personalizada, com todo o suporte que você precisa
               para se sentir segura nas decisões e ajustes da rotina do sono.
               Para as futuras mamães, você receberá orientações baseadas em
               neurociência e práticas gentis para já iniciar a jornada com mais
@@ -364,7 +366,7 @@ export default function Home() {
               />
             </div>
             <h3 className="text-[24px] font-semibold text-gray-900 mb-2">
-              Orientações futuras{" "}
+              Orientações futuras
             </h3>
             <p className="text-[16px] text-gray-600">
               Ao fim da consultoria, você recebe instruções para lidar com
@@ -395,17 +397,13 @@ export default function Home() {
         </div>
 
         {/* Cards */}
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-7xl mx-auto px-8">
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-7xl mx-auto px-8 items-start">
           {/* Card 1 */}
-          <div className="relative rounded-lg overflow-hidden h-[850px] md:h-full mdd:h-[720px]">
-            <Image
-              src="images/card_at_1.svg"
-              alt="Background Card 1"
-              fill
-              className="object-cover"
-              priority
-            />
-            <div className="relative z-10 p-8 h-full flex flex-col">
+          <div
+            className="relative rounded-lg overflow-hidden h-auto bg-cover bg-center bg-no-repeat"
+            style={{ backgroundImage: "url('images/card_at_1.svg')" }}
+          >
+            <div className="relative z-10 p-8 flex flex-col">
               <p className="text-[14px] text-gray-700 mb-2">
                 Ideal para futuras mamães
               </p>
@@ -417,7 +415,7 @@ export default function Home() {
                 Leveza e segurança desde o início da maternidade..
               </h4>
               <a
-                href="https://wa.me/5561998701080"
+                href="https://wa.me/5561985980768"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="w-full bg-white text-black border-solid border-2 border-gray-300 rounded-full hover:text-white hover:border-pink_cl-980 hover:bg-pink_cl-980 transition-colors py-3 mb-2 font-medium flex items-center justify-center"
@@ -430,15 +428,11 @@ export default function Home() {
           </div>
 
           {/* Card 2 */}
-          <div className="relative rounded-lg overflow-hidden h-[950px] md:h-full mdd:h-[800px]">
-            <Image
-              src="images/card_at_2.svg"
-              alt="Background Card 2"
-              fill
-              className="object-cover"
-              priority
-            />
-            <div className="relative z-10 p-8 h-full flex flex-col">
+          <div
+            className="relative rounded-lg overflow-hidden h-auto bg-cover bg-center bg-no-repeat"
+            style={{ backgroundImage: "url('images/card_at_2.svg')" }}
+          >
+            <div className="relative z-10 p-8 flex flex-col">
               <p className="text-[14px] text-gray-700 mb-2">
                 Transforme a rotina do sono do seu bebê
               </p>
@@ -450,7 +444,7 @@ export default function Home() {
                 Ideal para mudanças duradouras com acompanhamento contínuo
               </h4>
               <a
-                href="https://wa.me/5561998701080"
+                href="https://wa.me/5561985980768"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="w-full bg-pink_cl-500 text-white rounded-full hover:bg-pink_cl-980 hover:border-pink_cl-980 transition-colors py-3 mb-2 font-medium flex items-center justify-center"
@@ -463,15 +457,11 @@ export default function Home() {
           </div>
 
           {/* Card 3 */}
-          <div className="relative rounded-lg overflow-hidden h-[850px] md:h-full mdd:h-[720px]">
-            <Image
-              src="images/card_at_3.svg"
-              alt="Background Card 3"
-              fill
-              className="object-cover"
-              priority
-            />
-            <div className="relative z-10 p-8 h-full flex flex-col">
+          <div
+            className="relative rounded-lg overflow-hidden h-auto bg-cover bg-center bg-no-repeat"
+            style={{ backgroundImage: "url('images/card_at_3.svg')" }}
+          >
+            <div className="relative z-10 p-8 flex flex-col">
               <p className="text-[14px] text-gray-700 mb-2">
                 Apoio pós consultoria
               </p>
@@ -484,7 +474,7 @@ export default function Home() {
                 outras fases
               </h4>
               <a
-                href="https://wa.me/5561998701080"
+                href="https://wa.me/5561985980768"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="w-full bg-white text-black rounded-full border-solid border-2 hover:border-pink_cl-980 hover:text-white border-gray-300 hover:bg-pink_cl-980 transition-colors py-3 mb-2 font-medium flex items-center justify-center"
@@ -538,7 +528,7 @@ export default function Home() {
                   orientação empática e estratégias da neurociência.
                 </p>
                 <a
-                  href="https://wa.me/5561998701080"
+                  href="https://wa.me/5561985980768"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="w-[247px] bg-[#4CAF50] h-[56px] text-white px-8 py-4 rounded-full hover:bg-[#358438] transition-colors text-lg font-medium flex items-center gap-3"

@@ -50,7 +50,7 @@ const Footer = () => {
               @carlamuniz.sonoinfantil
             </a>
             <a
-              href="https://wa.me/5561998701080"
+              href="https://wa.me/5561985980768"
               target="_blank"
               rel="noopener noreferrer"
               className="text-sm hover:text-brown_cl-200 transition-colors flex items-center justify-center md:justify-start gap-2"
@@ -67,7 +67,7 @@ const Footer = () => {
                   fill="white"
                 />
               </svg>
-              (61) 99870-1080
+              (61) 98598-0768
             </a>
           </div>
         </div>
