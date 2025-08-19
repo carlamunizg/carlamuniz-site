@@ -62,26 +62,28 @@ const Header = () => {
           className="text-white focus:outline-none"
           aria-label="Menu"
         >
-          <svg
-            className="w-6 h-6"
-            fill="none"
-            stroke="#EDFF8C"
-            strokeWidth="2"
-            viewBox="0 0 24 24"
-            xmlns="http://www.w3.org/2000/svg"
-          >
-            <path
-              strokeLinecap="round"
-              strokeLinejoin="round"
-              d="M4 6h16M4 12h16M4 18h16"
-            />
-          </svg>
+          <div className="flex items-center justify-center w-12 h-12 rounded-full bg-[#FDECEC] border border-[#F5CACA]">
+            <svg
+              className="w-6 h-6"
+              fill="none"
+              stroke="#CC6C67"
+              strokeWidth="2"
+              viewBox="0 0 24 24"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                d="M4 6h16M4 12h16M4 18h16"
+              />
+            </svg>
+          </div>
         </button>
       </div>
 
       {/* Mobile Menu Dropdown */}
       {isMenuOpen && (
-        <div className="absolute top-[50px] right-0 w-full shadow-lg flex flex-col items-center space-y-2 py-5 z-50 md:hidden">
+        <div className="absolute top-[80px] right-0 w-full shadow-lg flex flex-col items-center space-y-2 py-5 z-50 md:hidden opacity-100 bg-[#ffeded]">
           <button
             onClick={() => scrollToSection("quem-sou-eu")}
             className="text-[#7F3835] px-4 py-2 hover:bg-[#CC6C67] hover:text-white w-full text-center"
