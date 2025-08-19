@@ -165,16 +165,7 @@ export default function Home() {
               gestação, acreditando que um sono saudável começa em um ambiente
               seguro, previsível e afetuoso — dentro e fora da barriga.
             </p>
-            {/* <Image
-              src="images/certificados.svg"
-              width={439}
-              height={104}
-              alt="Certificados"
-              title="Certificados"
-              priority
-              className="cursor-pointer w-full max-w-[439px] mx-auto lg:mx-0"
-            /> */}
-            <div className="flex items-center gap-4">
+            <div className="flex items-center gap-4 justify-center lg:justify-start">
               <Image
                 src="images/reconhecimento.svg"
                 width={110}
@@ -424,7 +415,7 @@ export default function Home() {
           <span className="h-[32px] bg-blush_cl-100 text-brown_cl-500 rounded-full text-[16px] font-medium mb-6 px-6 py-1 flex items-center justify-center w-fit">
             Pacotes de atendimento
           </span>
-          <h1 className="text-[64px] font-bold text-gray-900 mb-8 leading-tight">
+          <h1 className="text-[56px] md:text-[56px] lg:text-[64px] font-bold text-gray-900 mb-8 leading-tight">
             Meus atendimentos
           </h1>
         </div>
