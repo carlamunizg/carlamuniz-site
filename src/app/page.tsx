@@ -30,7 +30,7 @@ export default function Home() {
   ];
 
   const card_2 = [
-    "3 encontros remotos para entender o toda a rotina da criança, com duração de 1h30 a 2h (via Google Meet);",
+    "3 encontros remotos para entender toda a rotina da criança, com duração de 1h30 a 2h (via Google Meet);",
     "45 dias de suporte via WhatsApp;",
     "Anamnese e avaliação completa do sono;",
     "Plano de ação pós-consultoria;",
