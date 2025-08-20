@@ -67,7 +67,7 @@ export default function Home() {
             orientações personalizadas e acolhedoras.
           </h1>
           <a
-            href="https://wa.me/5561985980768"
+            href="https://wa.me/5561998970108"
             target="_blank"
             rel="noopener noreferrer"
             className="w-[246px] text-center h-[46px] bg-[#4CAF50] text-white rounded-full hover:bg-[#358438] transition-colors flex items-center justify-center gap-2 px-[22px] py-[14px]"
@@ -99,7 +99,7 @@ export default function Home() {
             orientações personalizadas e acolhedoras.
           </h1>
           <a
-            href="https://wa.me/5561985980768"
+            href="https://wa.me/5561998970108"
             target="_blank"
             rel="noopener noreferrer"
             className="w-[246px] text-center h-[46px] bg-[#4CAF50] text-white rounded-full hover:bg-[#358438] transition-colors flex items-center justify-center gap-2 px-[22px] py-[14px]"
@@ -439,7 +439,7 @@ export default function Home() {
                 Leveza e segurança desde o início da maternidade..
               </h4>
               <a
-                href="https://wa.me/5561985980768"
+                href="https://wa.me/5561998970108"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="w-full bg-white text-black border-solid border-2 border-gray-300 rounded-full hover:text-white hover:border-pink_cl-980 hover:bg-pink_cl-980 transition-colors py-3 mb-2 font-medium flex items-center justify-center"
@@ -468,7 +468,7 @@ export default function Home() {
                 Ideal para mudanças duradouras com acompanhamento contínuo
               </h4>
               <a
-                href="https://wa.me/5561985980768"
+                href="https://wa.me/5561998970108"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="w-full bg-pink_cl-500 text-white rounded-full hover:bg-pink_cl-980 hover:border-pink_cl-980 transition-colors py-3 mb-2 font-medium flex items-center justify-center"
@@ -498,7 +498,7 @@ export default function Home() {
                 outras fases
               </h4>
               <a
-                href="https://wa.me/5561985980768"
+                href="https://wa.me/5561998970108"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="w-full bg-white text-black rounded-full border-solid border-2 hover:border-pink_cl-980 hover:text-white border-gray-300 hover:bg-pink_cl-980 transition-colors py-3 mb-2 font-medium flex items-center justify-center"
@@ -552,7 +552,7 @@ export default function Home() {
                   orientação empática e estratégias da neurociência.
                 </p>
                 <a
-                  href="https://wa.me/5561985980768"
+                  href="https://wa.me/5561998970108"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="w-[247px] bg-[#4CAF50] h-[56px] text-white px-8 py-4 rounded-full hover:bg-[#358438] transition-colors text-lg font-medium flex items-center gap-3"

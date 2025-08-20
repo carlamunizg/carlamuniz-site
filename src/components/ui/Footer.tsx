@@ -50,7 +50,7 @@ const Footer = () => {
               @carlamuniz.sonoinfantil
             </a>
             <a
-              href="https://wa.me/5561985980768"
+              href="https://wa.me/5561998970108"
               target="_blank"
               rel="noopener noreferrer"
               className="text-sm hover:text-brown_cl-200 transition-colors flex items-center justify-center md:justify-start gap-2"
