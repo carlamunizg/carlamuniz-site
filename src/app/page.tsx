@@ -124,7 +124,7 @@ export default function Home() {
         <div className="lg:mx-[100px] mx-[50px] xxl:mx-0 xxl:px-8 flex flex-col lg:flex-row items-center gap-8 lg:gap-[128px]">
           {/* Foto à esquerda */}
           <Image
-            src="images/carla_foto.svg"
+            src="images/carlastroke.svg"
             width={300}
             height={400}
             alt="Carla Muniz"
@@ -143,7 +143,7 @@ export default function Home() {
             </h2>
             <div className="flex justify-center lg:hidden">
               <Image
-                src="images/carla_foto.svg"
+                src="images/carlastroke.svg"
                 width={300}
                 height={400}
                 alt="Carla Muniz"
