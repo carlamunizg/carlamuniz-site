@@ -67,7 +67,7 @@ const Footer = () => {
                   fill="white"
                 />
               </svg>
-              (61) 98598-0768
+              (61) 99897-0108
             </a>
           </div>
         </div>
